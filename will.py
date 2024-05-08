@@ -6,20 +6,20 @@ import base64
 from io import BytesIO
 
 # Connection
+# conn = mysql.connector.connect(
+#     host="localhost",
+#     port="8889",
+#     user="root",
+#     passwd="root",
+#     db="radar_dbs01"
+# )
 conn = mysql.connector.connect(
-     host="localhost",
-     port="8889",
-     user="root",
-     passwd="root",
+     host="mysql.radardat.com",
+    # port="8889",
+     user="radar_data",
+     passwd="h~-ccQLYBf,_V%5",
      db="radar_dbs01"
  )
-# conn = mysql.connector.connect(
-#      host="mysql.radardat.com",
-#     # port="8889",
-#      user="radar_data",
-#      passwd="h~-ccQLYBf,_V%5",
-#      db="radar_dbs01"
-#  )
 
 c = conn.cursor()
 
